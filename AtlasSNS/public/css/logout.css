@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+    width: 1500px;
+
+
+}
+
+body {
+    background: linear-gradient(#186AC9, #2b95ff, #55aaff, #ffff00);
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*ログイン画面*/
+
+.login-label{
+display: block;
+padding-left: 28px;
+padding-bottom: 5px;
+}
+
+.logion-a{
+margin-left: 80px;
+margin-top: 40px;
+font-size: 20px;
+
+}
+.login{
+    display: flex;
+
+}
+div.logion-logo{
+display: block;
+padding: 50;
+}
+.Atlas-logo-login{
+margin-left: 130px;
+padding-top: 10px;
+
+}
+
+.login-logo{
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.sub-title{
+    font-size: 40px;
+    white-space: pre;
+}
+
+.letter-form {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+}
+
+div.background_box {
+    /* テキストを配置するための子要素 */
+    padding-right: 29px;
+    padding-left: 8px;
+    padding-bottom: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    /* #4d0000⇒rgba(77,0,0,0.7)に変更 */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+
+.background_box-login {
+    /* テキストを配置するための子要素 */
+    width: 350px;
+    padding-bottom: 34px;
+    background: rgba(0, 0, 0, 0.2);
+    /* #4d0000⇒rgba(77,0,0,0.7)に変更 */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+div.background_box-register {
+    /* テキストを配置するための子要素 */
+    width: 320px;
+    height: 290px;
+    background: rgba(0, 0, 0, 0.2);
+    /* #4d0000⇒rgba(77,0,0,0.7)に変更 */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.login-d{
+    display: block;
+    text-align: center;
+    font-weight:bold;
+    margin-top: 50px;
+
+}
+.login-e {
+    display: block;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.login-access-btn {
+
+   color: #fff;
+   border-radius: 9px;
+   border: none;
+   background-color: #DC143C;
+   padding: 10px 20px 10px 20px;
+
+}
+.login-access-btn-position{
+
+    display: block;
+    margin-top: 62px;
+    margin-left: 80px;
+}
+.letter {
+    display:block;
+    width: 50px;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+
+.input-login{
+        margin: 0 center;
+        /*中央寄せ*/
+        width:300px ;
+        height: 50px;
+        border-radius: 10px;
+        margin-left: 23px;
+        border: none;
+}
+
+
+.register-button {
+    color: #fff;
+    background-color: #DC143C;
+    padding: 10px 30px 10px 30px;
+    font-size: 25px;
+    border-radius: 9px;
+    margin-left: 135px;
+    margin-top: 30px;
+    border: none;
+
+}
+
+.register-button:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+.login-button{
+    color: #fff;
+    border: none;
+    background-color: #DC143C;
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    border-radius: 9px;
+    margin-left: 180px;
+    margin-top: 20px;
+
+}
+
+.login-button:hover{
+    color: #fff;
+   background: #f56500;
+}
+.login-register{
+display: block;
+color: #fff;
+margin-left: 76px;
+margin-top: 47px;
+
+
+}
+
+
+.register{
+    display: block;
+    color:#fff;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 80px;
+
+}
+
+.login-b
+{
+   margin-top: 40px;
+}
+
+.login-c{
+  margin-top: 38px;
+}
+
+.error-string{
+    margin-left: 24px;
+    color: #fff;
+}

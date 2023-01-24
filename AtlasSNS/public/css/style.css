@@ -1,0 +1,617 @@
+@charset "utf-8";
+
+html {
+    width: 100%;
+
+}
+
+.head{
+display: flex;
+justify-content: space-between;
+}
+
+.head body {
+    font-family: arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 2rem;
+    width: 1500;
+}
+
+/* header */
+header {
+    background: #286AC9;
+    overflow: visible;
+    width: auto;
+    height: 100px;
+}
+
+.Atlas_icon{
+    display: flex;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+
+
+p.font-color-white {
+display: inline;
+color: white;
+font-size: larger;
+font-weight: bold;
+margin-right: auto;
+}
+
+.header-icon {
+    display: flex;
+    margin-right: auto
+}
+
+.head-icon{
+    margin-right: 20px;
+}
+
+/* main content */
+
+#row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#container {
+    flex: 0 0 81%;
+}
+
+#side-bar {
+    min-height: 100vh;
+    flex: 0 0 19%;
+    border-left: 1px solid #727272;
+}
+
+.tweet_form{
+outline: none;
+border: none;
+resize: none;
+width: 1000px;
+
+}
+
+.index-form{
+display: flex;
+margin-left: 92px;
+margin-top: 30px;
+}
+
+.btn-post {
+  margin-left: 85%;
+  border: none;
+}
+.btn-post:active{
+  outline:none;
+}
+
+/* accordion-menu */
+.accordion-menu {
+box-shadow: none;
+z-index: 0;
+position: relative;
+}
+
+.accordion-container .accordion-title {
+    display: block;
+    position: relative;
+    background: #286AC9;
+    height: 78px;
+    margin-top: 22px;
+}
+
+.accordion-title:after {
+    content: "";
+    position: absolute;
+    right: 105px;
+    top: 25%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: solid 4px #fff;
+    border-right: solid 4px #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.accordion-title.open:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 35%;
+}
+
+ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+    margin-left: auto;
+    margin-top: 100px;
+    -moz-box-shadow: 0 0 5px #111;
+    -webkit-box-shadow: 0 0 5px #111;
+    box-shadow: 0 0 5px #111;
+}
+
+ul li input[type='checkbox'] {
+    display: none;
+}
+
+/*当たり判定*/
+ul li label {
+    display: block;
+    padding: 10px;
+    width: 10px;
+}
+
+ul li i {
+    font-size: 18px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*メニュー背景*/
+ul ul {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    -moz-box-shadow: inset 0 2px 2px #b3b3b3;
+    -webkit-box-shadow: inset 0 2px 2px #b3b3b3;
+    box-shadow: inner 0 2px 2px #b3b3b3;
+}
+
+ul ul li a {
+    display: block;
+    padding: 33px;
+    color: #999;
+    text-decoration: none;
+}
+
+ul ul li a:hover {
+    color: #fff;
+    background-color: #000088;
+}
+
+
+.submenuItems {
+    display: none;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    z-index: 2;
+    border: 2px solid #000088;
+}
+
+
+/*follow＆searchアイコンボタン*/
+.search-btn-icon{
+display: flex;
+justify-content: space-between;
+}
+
+.follow-list-btn {
+    display: inline-block;
+        margin: 1em 0;
+        padding: 0.6em 1em;
+        color: honeydew;
+        font-size: 0.95em;
+        text-decoration: none;
+        background-color: #005FFF;
+        border-radius: 7px;
+        margin-top: auto;
+
+}
+a:hover {
+    text-decoration: none;
+}
+
+.follow-list-btn-position{
+    text-align: right;
+        display: block;
+        margin-right: 3%;
+}
+
+.follows-count{
+display: inline-block;
+margin-left: 50px;
+}
+
+.search-btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.6em 1em;
+    background-color: #005FFF;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 25%;
+    }
+
+.follow_border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-color: #696969;
+    border-left-style: solid;
+}
+/*つぶやき*/
+.main_border
+{
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-color: #dcdcdc;
+    border-left-style: solid;
+}
+
+.edit-btn{
+display: flex;
+justify-content: flex-end;
+margin-right: 30px;
+
+}
+.js-modal-open{
+margin-top: 5px;
+}
+
+.js-modal-open-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100px;
+    height: auto;
+    margin-left: 1160px;
+
+}
+.modal_edit{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 850px;
+
+
+}
+/*アコーディオン */
+
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background-color: #fff;
+    outline: initial;
+}
+
+.menu-btn .inn:before {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -40%) rotate(135deg);
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transition: 0.3s ease;
+}
+
+.menu-btn.is-open .inn:before {
+    top: 60%;
+    transform: translate(-50%, -60%) rotate(-45deg);
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+    transform: translateY(-30px);
+}
+
+.menu ul {
+    border-bottom: 1px solid #000;
+}
+
+.menu ul li {
+    height: 60px;
+    border-top: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu.is-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.User-icon {
+    margin-right: auto;
+}
+
+.z-index_test {
+
+}
+
+
+/*編集機能*/
+
+.modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal__bg {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+div.modal__content {
+    background: #fff;
+    left: 50%;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom:29px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+
+}
+
+.profile-menu {
+
+    margin-left: 29%;
+    margin-top: 85px;
+    box-sizing: border-box;
+
+}
+
+/*　プロフィール　*/
+.profile-form {
+    display: block;
+
+}
+
+.textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+
+.modal_post {
+    resize: none;
+    width: 925px;
+    height: 250px;
+}
+
+.input-profile {
+
+ width: 400px;
+ font-size: 100%;
+ height: 40px;
+ margin-bottom: 45px;
+ margin-left: 70px;
+
+
+}
+
+.password{
+    width: 400px;
+    height: 40px;
+    font-size: 100%;
+}
+.profile_form{
+padding-bottom: 20px;
+
+}
+
+.profile-images{
+
+display: block;
+float: left;
+margin-right: 50px;
+
+}
+
+
+
+.hidden{
+    visibility: hidden;
+    margin-left: 30px;
+}
+
+.left,
+.right {
+    display: inline-block;
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+
+.right {
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.frame {
+    display: flex;
+}
+
+
+hr.style1 {
+    border-top: 1px solid #8c8b8b;
+}
+
+
+/*ユーザー検索*/
+.search-result{
+font-size: 30px;
+float: left;
+margin-right: 360px;
+margin-top: 58px;
+}
+.search-users{
+margin-right: auto;
+margin-left:40%;
+}
+
+.search-users-name {
+    margin-top: 50px;
+}
+
+.follow-btn{
+padding-bottom: 30px;
+padding-left: 200px;
+width: 400px;
+display: flex;
+
+
+
+}
+.search-btn-unfollow{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    background-color: #FF3333;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;
+    border-radius: 7px;
+
+}
+.btn-unfollow
+{
+border: none;
+outline: none;
+background: transparent;
+color: #fff;
+background-color: #FF3333;
+padding-top: 7px;
+padding-left: 70px;
+padding-right: 70px;
+padding-bottom: 7px;
+border-radius: 7px;
+
+
+}
+
+.btn-following
+{
+border: none;
+outline: none;
+background: transparent;
+color: #fff;
+background-color: #3399FF;
+padding-top: 7px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 7px;
+border-radius: 7px;
+}
+
+
+.search_container {
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+
+}
+
+.search_container input[type="text"] {
+  width: 375px;
+  height: 55px;
+  border-radius: 7px;
+}
+
+.search_container input[type="text"]:focus {
+    outline: 0;
+
+}
+
+.search_container input[type="submit"] {
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    background: #186AC9;
+    color: #fff;
+    outline: none;
+    width:  52px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 28px;
+
+
+}
+
+
+
+/*フォローページ*/
+
+.follow-list-images{
+display: inline-block;
+margin-left: 70px;
+
+}
+
+h3.Follow-font{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+/*他ユーザープロフィール*/
+
+.main-profile-users{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+.profile-follow-btn
+{
+margin-top: 45px;
+margin-right: 20px;
+}
+
+.profile-users
+{
+margin-left: 125px;
+}
+
+.text-profile{
+
+ margin-left: 200px;
+}
